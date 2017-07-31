@@ -1,7 +1,6 @@
 FROM quantumobject/docker-nagios
 
-COPY set-password.sh /set-password.sh
-RUN /set-password.sh
+COPY run.sh /run.sh
 
-CMD ["/sbin/my_init"]
+CMD ["/run.sh"]
 
