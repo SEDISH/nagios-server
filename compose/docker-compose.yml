@@ -4,4 +4,5 @@ services:
     container_name: nagios-server
     image: uwitech/nagios-server
     env_file: .env
-
+    ports:
+        - "80:80"
