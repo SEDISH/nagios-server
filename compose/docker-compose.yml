@@ -1,0 +1,7 @@
+version: "2"
+services:
+  nagios-server:
+    container_name: nagios-server
+    image: uwitech/nagios-server
+    env_file: .env
+
