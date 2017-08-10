@@ -12,6 +12,6 @@ The login is **nagiosadmin**. The password is controlled by the .env file (defau
 When is up and running, you should be able to access the Nagios monitoring server at:
 
 ```bash
-  http://localhost/nagios
+  http://localhost:9090/nagios
 ```
 
