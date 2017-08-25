@@ -6,9 +6,10 @@ COPY utils/replace-vars /replace-vars
 COPY run.sh /run.sh
 
 RUN mkdir /usr/local/nagios/etc/servers
-COPY servers/ /usr/local/nagios/etc/servers/
-COPY nagios.cfg /usr/local/nagios/etc/nagios.cfg
-COPY added_commands.cfg /usr/local/nagios/etc/objects/added_commands.cfg
+COPY conf/servers/ /usr/local/nagios/etc/servers/
+COPY conf/nagios.cfg /usr/local/nagios/etc/nagios.cfg
+COPY conf/commands.cfg /usr/local/nagios/etc/objects/commands.cfg
+COPY conf/contacts.cfg /usr/local/nagios/etc/objects/contacts.cfg
+COPY conf/mailname /etc/mailname
 
 CMD ["/run.sh"]
-
